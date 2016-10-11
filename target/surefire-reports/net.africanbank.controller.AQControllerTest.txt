@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: net.africanbank.controller.AQControllerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.373 sec - in net.africanbank.controller.AQControllerTest

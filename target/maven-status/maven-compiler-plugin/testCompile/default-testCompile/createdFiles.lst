@@ -1,0 +1,8 @@
+net/africanbank/AbstractTest.class
+net/africanbank/domain/ProductVariantTest.class
+net/africanbank/service/PVServiceTest.class
+net/africanbank/service/AQServiceTest.class
+net/africanbank/domain/ApplicationQueueTest.class
+net/africanbank/AbstractControllerTest.class
+net/africanbank/controller/ProductVariantControllerTest.class
+net/africanbank/controller/AQControllerTest.class

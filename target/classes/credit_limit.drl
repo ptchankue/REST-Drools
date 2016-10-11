@@ -1,0 +1,34 @@
+
+package net.africanbank.domain;
+
+rule "credit_limit_rule"
+when
+    cust: Credit(card_type == "Student Gold")
+then
+    cust.setLimit(2000);
+    System.out.println("Credit limit $2000");
+end
+
+rule "student_platinum_small_num_credit_card"
+when
+    cust: Credit(card_type == "Student Platinum", num_credit_card <= 2)
+then
+    cust.setLimit(2500);
+    System.out.println("Credit limit $2500");
+end
+
+rule "student_platinum_large_num_credit_card"
+when
+    cust: Credit(card_type == "Student Platinum", num_credit_card > 2)
+then
+    cust.setLimit(3500);
+    System.out.println("Credit limit $3500");
+end
+
+/*rule "determineIfCardDueForExpiry"
+when
+    dueDate:
+    card: Card(expiryDate > after dueDate)
+then
+    Card.setCardDueForExpiry(true);
+*/
